@@ -11,9 +11,9 @@ $link = $result_c->fetch(PDO::FETCH_ASSOC);
 $redirect_link = $link['link'];
 
 if(isset($_POST['first_name'])){
-	$sql = "INSERT INTO leads (first_name,last_name,email_address,phone_home,date_added) values (?,?,?,?,?)";
+	$sql = "INSERT INTO leads (first_name,email_address,phone_home,date_added) values (?,?,?,?)";
 	$q = $pdo->prepare($sql);
-	$q->execute(array($_POST['first_name'],$_POST['last_name'],$_POST['email_address'],$_POST['phone_home'],date('Y-m-d H:i:s')));
+	$q->execute(array($_POST['first_name'],$_POST['email_address'],$_POST['phone_home'],date('Y-m-d H:i:s')));
 	header("Location:".$redirect_link);
 }
 ?>
@@ -83,8 +83,6 @@ if(isset($_POST['first_name'])){
 								<div style="width: 75%;margin: 0 auto;">
 									<label for="first_name" class="form-label">First name</label> 
 									<input class="form-control" id="first_name" name="first_name" class="form-input" required>
-									<label for="last_name" class="form-label">Last name</label> 
-									<input class="form-control" id="last_name" name="last_name" class="form-input" required>
 									<label for="email_address" class="form-label">Email address</label> 
 									<input type="email" class="form-control" id="email_address" name="email_address" placeholder="your@email.com" class="form-input" required>
 									<label for="phone_home" class="form-label">Mobile Phone number</label> 
