@@ -11,9 +11,9 @@ $link = $result_c->fetch(PDO::FETCH_ASSOC);
 $redirect_link = $link['link'];
 
 if(isset($_POST['first_name'])){
-	$sql = "INSERT INTO leads (first_name,last_name,email_address,phone_home,injury,date_added) values (?,?,?,?,?,?)";
+	$sql = "INSERT INTO leads (first_name,last_name,email_address,phone_home,date_added) values (?,?,?,?,?)";
 	$q = $pdo->prepare($sql);
-	$q->execute(array($_POST['first_name'],$_POST['last_name'],$_POST['email_address'],$_POST['phone_home'],$_POST['injury'],date('Y-m-d H:i:s')));
+	$q->execute(array($_POST['first_name'],$_POST['last_name'],$_POST['email_address'],$_POST['phone_home'],date('Y-m-d H:i:s')));
 	header("Location:".$redirect_link);
 }
 ?>
@@ -76,11 +76,9 @@ if(isset($_POST['first_name'])){
 						<div>
 							<div style="-webkit-box-shadow: 9px 10px 14px 4px rgba(0, 0, 0, 0.47);box-shadow: 9px 10px 14px 4px rgba(0, 0, 0, 0.47);display: block;padding: 1rem;margin: 30px;text-align: center;border-radius: 10px;background-color: white;max-width: 500px;">
 								<div style="display: block; padding: 10px; margin: 0px; text-align: center; border-radius: 0px; color: rgb(7, 54, 80);">
-									<h1 style="font-size: 2.2rem; font-weight: bolder;">Camp Lejeune Water Contamination Lawsuit - Get Compensated!</h1>
+									<h1 style="font-size: 2.2rem; font-weight: bolder;">Over a million people might have been exposed to the Camp Lejeune contaminated drinking water - Check below if you qualify for Compensation</h1>
 								</div>
 								<br />
-
-								<p style="font-size: 1.5rem; font-weight: bold; color: rgb(13, 50, 69);">How may we contact you?</p>
 
 								<div style="width: 75%;margin: 0 auto;">
 									<label for="first_name" class="form-label">First name</label> 

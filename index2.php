@@ -73,7 +73,7 @@ $redirect_link = $link['link'];
 							</div>
 							<br />
 
-							<p style="font-size: 1.5rem; font-weight: bold; color: rgb(13, 50, 69);">Over a million poeple might have been exposed to the Camp Lejeune contaminated drinking water - Click Below for Compensation</p>
+							<p style="font-size: 1.5rem; font-weight: bold; color: rgb(13, 50, 69);">Over a million people might have been exposed to the Camp Lejeune contaminated drinking water - Click Below for Compensation</p>
 
 							<p><br /></p>
 							<a href="<?php echo $redirect_link; ?>"><div style="display:block; text-align:center;  color: white; font-size:16px; font-weight:bold; border-radius:16px;  width:75%; padding:10px 40px; margin:10px auto">Yes</div></a>
