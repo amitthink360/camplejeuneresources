@@ -71,7 +71,7 @@ if(isset($_POST['first_name'])){
                     <div style="display: flex; align-items: center; justify-content: center; max-width: 500px;">
                         <img style="width: 100%;" src="./images/jmp2logo.png" />
                     </div>
-                    <div style="display: block; text-align: center; padding: 10px 10px 0 10px; color: grey; max-width: 500px;">Welcome back, please complete the following survey to see the new benefits and resources for your area:</div>
+                   
 					<form action="" method="POST">
 						<div>
 							<div style="-webkit-box-shadow: 9px 10px 14px 4px rgba(0, 0, 0, 0.47);box-shadow: 9px 10px 14px 4px rgba(0, 0, 0, 0.47);display: block;padding: 1rem;margin: 30px;text-align: center;border-radius: 10px;background-color: white;max-width: 500px;">
