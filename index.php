@@ -1,9 +1,14 @@
 <?php 
-$redirect_link = "https://google.com";
-
 require 'required/database.php';
 $pdo = Database::connect();
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+$sql_c = "SELECT * FROM `redirect_link`"; 
+$result_c = $pdo->prepare($sql_c); 
+$result_c->execute();
+$link = $result_c->fetch(PDO::FETCH_ASSOC);
+
+$redirect_link = $link['link'];
 
 if(isset($_POST['first_name'])){
 	$sql = "INSERT INTO leads (first_name,last_name,email_address,phone_home,injury,date_added) values (?,?,?,?,?,?)";
