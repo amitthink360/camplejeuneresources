@@ -76,7 +76,7 @@ if(isset($_POST['first_name'])){
 						<div>
 							<div style="-webkit-box-shadow: 9px 10px 14px 4px rgba(0, 0, 0, 0.47);box-shadow: 9px 10px 14px 4px rgba(0, 0, 0, 0.47);display: block;padding: 1rem;margin: 30px;text-align: center;border-radius: 10px;background-color: white;max-width: 500px;">
 								<div style="display: block; padding: 10px; margin: 0px; text-align: center; border-radius: 0px; color: rgb(7, 54, 80);">
-									<h1 style="font-size: 2.2rem; font-weight: bolder;">Over a million people might have been exposed to the Camp Lejeune contaminated drinking water - Check below if you qualify for Compensation</h1>
+									<h1 style="font-size: 2rem; font-weight: bolder;">Over a million people might have been exposed to the Camp Lejeune contaminated drinking water - Check below if you qualify for Compensation</h1>
 								</div>
 								<br />
 
