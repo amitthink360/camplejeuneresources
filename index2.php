@@ -77,22 +77,12 @@ $redirect_link = $link['link'];
 
 							<p><br /></p>
 							<a href="<?php echo $redirect_link; ?>"><div style="display:block; text-align:center;  color: white; font-size:16px; font-weight:bold; border-radius:16px;  width:75%; padding:10px 40px; margin:10px auto">Yes</div></a>
-							<a><div id="No" style="display:block; color: white; text-align:center;  font-size:16px; font-weight:bold; border-radius:16px; width:75%; padding:10px 40px; margin:10px auto">No</div></a>
+							<a href="<?php echo $redirect_link; ?>"><div id="No" style="display:block; color: white; text-align:center;  font-size:16px; font-weight:bold; border-radius:16px; width:75%; padding:10px 40px; margin:10px auto">No</div></a>
 							<p><br /></p>
 						</div>
 					</div>
                 </div>
             </div>
         </main>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		
-		<script>
-			function nextStep(current,next){
-				$(".steps").hide();
-				$("#step-"+current).fadeOut();
-				$("#step-"+next).fadeIn();
-			}
-		</script>
     </body>
 </html>
