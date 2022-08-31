@@ -36,7 +36,7 @@ $redirect_link = $link['link'];
 
 <div class="container">
   <h2>Redirect Link</h2>
-  <form action="">
+  <form action="" method="POST">
     <div class="form-group">
       <label for="redirect_link">Link:</label>
       <input type="text" class="form-control" id="redirect_link" placeholder="Enter Redirect Link" name="redirect_link" value="<?php echo $redirect_link; ?>">
